@@ -1,0 +1,36 @@
+.card{
+    float: left;
+  margin-left: 5rem;
+
+  margin-top: 4rem;
+}
+.text{
+position: absolute;
+   
+    margin-left: 40rem;
+    margin-top: 15rem;
+ padding-left: 7%;
+ align-content: center;
+ padding-right: 2%;
+
+
+    
+  
+
+
+  font-family: 'Montserrat', sans-serif;
+  line-height: 3rem;
+
+}
+.hire{
+    border: 2px solid black;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1%;
+    width: 6rem;
+    color: white;
+    background-color: blueviolet;
+}
+.hire a:hover{
+    color: white;
+}

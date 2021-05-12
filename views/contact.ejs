@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/logo (1).png"/>
+    <link rel="stylesheet" href="contact.css">
+ 
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+
+    
+     <title><%= title %></title>
+</head>
+<body>
+  
+  <br>
+  <br>
+  <!-- <br> -->
+    <div class="container full">
+     
+        <form class="well form-horizontal" action="/msg" method="POST"  id="contact_form">
+    <fieldset >
+    
+    <!-- Form Name -->
+    <legend class="contact-title">Please provide your valuable feedback !</legend>
+   <div class="full-form">
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label" style="font-weight: bold;">First Name:-</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="fName" placeholder="First Name" class="form-control"  type="text" required>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label" style="font-weight: bold;" >Last Name:-</label> 
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input name="lName" placeholder="Last Name" class="form-control"  type="text" required>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+           <div class="form-group">
+      <label class="col-md-4 control-label" style="font-weight: bold;">E-Mail:-</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input name="eMail" placeholder="E-Mail Address" class="form-control"   type="text" required>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Message input    -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" style="font-weight: bold;">Message:-</label>
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                <textarea class="form-control" name="body" placeholder="Message Description" required></textarea>
+      </div>
+      </div>
+    </div>
+   
+    
+   
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+        <!-- <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button> -->
+        <button type="submit" class="btn  btn-outline-light  " style="color: white;margin-left:1rem;  background-color:black;width: 7rem;">Submit <span class="glyphicon glyphicon-send"></span></button>
+      </div>
+    </div>
+ 
+    </fieldset>
+ 
+    </div>
+    <div class="contact">
+        <img src="contact.svg" alt="">
+    </div>
+    <br>
+    <br>
+  
+  
+        </div><!-- /.container -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+        <script>
+            $(document).ready(function() {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+          
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            fName: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: '<p style=color:red;>Please enter your first name</p>'
+                    }
+                }
+            },
+             lName: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: '<p style=color:red;>Please enter your last name</p>'
+                    }
+                }
+            },
+            eMail: {
+                validators: {
+                    notEmpty: {
+                        message: '<p style=color:red;>Please enter your email address</p>'
+                    },
+                    emailAddress: {
+                        message: '<p style=color:red;>Please enter a valid email address</p>'
+                    }
+                }
+            },
+           
+          
+            
+
+            body: {
+                validators: {
+                      stringLength: {
+                        min: 5,
+                        max: 200,
+                        message:'<p style=color:red;>Please enter at least 5 characters and no more than 200</p>'
+                    },
+                    notEmpty: {
+                        message: '<p style=color:red;>Please enter a description of your feedback</p>'
+                    }
+                    }
+                }
+            }
+        })
+       
+});
+
+
+        </script>
+</body>
+</html>

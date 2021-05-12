@@ -1,0 +1,19 @@
+.contact-title{
+    color: blueviolet;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    .full-form{
+        margin-top: 6rem;
+    }
+    .full{
+        position: absolute;
+      
+    }
+   
+    .contact{
+        position: relative;
+        width: 50rem;
+        float: right;
+        padding: 1%;
+        margin-right: 4rem;
+    }
