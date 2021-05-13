@@ -32,8 +32,39 @@
 .foot-text{
 position: absolute;
   z-index: 1;
+  margin-top: -4rem;
+  padding-left: 2%;
 }
 .foot-img{
  position: relative;
   z-index: -1;
+}
+.insta{
+  width: 2rem;
+
+margin-right: 4rem;
+  float: right;
+}
+.tele{
+  width: 2rem;
+  margin-right: 1rem;
+  
+  float: right;
+}
+.link{
+  width: 2rem;
+  margin-right: 1rem;
+  
+
+  float: right;
+}
+.git{
+  width: 2rem;
+  margin-right: 1rem;
+  
+  float: right;
+}
+.connect{
+
+margin-top: -4rem;
 }

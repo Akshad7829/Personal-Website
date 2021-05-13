@@ -34,3 +34,45 @@ position: absolute;
 .hire a:hover{
     color: white;
 }
+.profile{
+  width: 40rem;
+  position: relative;
+   margin-left: 50rem;
+    margin-top: 6rem;
+     z-index: 1;
+
+}
+.hi{
+  font-weight: bolder; 
+  
+  font-size: 3rem;
+}
+.name{
+  color: grey;
+}
+.top-whole{
+  position: absolute;
+   margin-top: 10rem; 
+   margin-left: 10rem; 
+}
+.back{
+  width: 45rem;
+   margin-left: 50rem;
+   z-index:1;
+   position: absolute;
+}
+.about{
+  margin-left: 60rem;
+  margin-top: 30rem;
+}
+.about-whole{
+  position: relative;
+  float: left;
+}
+.detail{
+  width: 30rem;
+}
+.skills{
+  width: 35rem;
+  margin-left: -20rem;
+}
