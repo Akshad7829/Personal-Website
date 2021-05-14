@@ -76,3 +76,15 @@ position: absolute;
   width: 35rem;
   margin-left: -20rem;
 }
+.skills-used{
+  display:inline-block;
+padding: 1%;
+
+
+/* border: 3px solid #23153C ; */
+border-radius: 1rem;
+margin-left: 5rem;
+
+font-size: 2rem;
+color: blueviolet;
+}
